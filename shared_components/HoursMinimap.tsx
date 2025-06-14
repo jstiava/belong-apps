@@ -103,6 +103,7 @@ function HoursBox({
     }
 
     const onTouchMove = (e: TouchEvent) => {
+        e.preventDefault();
         const touch = e.touches[0];
         onMouseMove(touch)
     }
